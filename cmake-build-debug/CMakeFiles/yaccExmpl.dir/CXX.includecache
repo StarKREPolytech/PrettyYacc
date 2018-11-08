@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+../generated/calc/calc_token.h
+
 ../main/calc/calc.h
 cctype
 -
@@ -14,7 +16,41 @@ cstdio
 stdlib.h
 -
 
-/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/main/main.cpp
+/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/generated/calc/calc_lexer.cpp
+stdio.h
+-
+string.h
+-
+errno.h
+-
+stdlib.h
+-
+inttypes.h
+-
 calc/calc.h
+-
+calc/calc_token.h
+-
+unistd.h
+-
+
+/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/generated/calc/calc_parser.cpp
+calc/calc.h
+-
+calc/calc_token.h
+-
+stddef.h
+-
+libintl.h
+-
+alloca.h
+-
+malloc.h
+-
+stdlib.h
+-
+stdlib.h
+-
+stdio.h
 -
 

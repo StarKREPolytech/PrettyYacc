@@ -11,39 +11,44 @@ set(prefix calc_)
 #Find yacc:
 find_package(BISON REQUIRED)
 
-if (BISON_FOUND)
-    set(yaccout ../generated/calc/calc_parser.cpp)
-    add_custom_command(
-            OUTPUT ${yaccout}
-            COMMAND ${BISON_EXECUTABLE}
-            --defines=../generated/calc/calc_token.h
-            --output=${yaccout}
-            -p ${prefix}
-            ../main/calc/calc.y
-    )
-endif ()
-
 #Find lex:
 find_package(FLEX REQUIRED)
 
-if (FLEX_FOUND)
-    set(flexout ../generated/calc/calc_lexer.cpp)
-    add_custom_command(
-            OUTPUT ${flexout}
-            COMMAND ${FLEX_EXECUTABLE}
-            --outfile=${flexout}
-            -P${prefix}
-            ../main/calc/calc.l
-    )
-endif ()
+function(generate)
+    if (BISON_FOUND)
+        set(yaccout ../generated/calc/calc_parser.cpp)
+        add_custom_command(
+                OUTPUT ${yaccout}
+                COMMAND ${BISON_EXECUTABLE}
+                --defines=../generated/calc/calc_token.h
+                --output=${yaccout}
+                -p ${prefix}
+                ../main/calc/calc.y
+        )
+    endif ()
+    if (FLEX_FOUND)
+        set(flexout ../generated/calc/calc_lexer.cpp)
+        add_custom_command(
+                OUTPUT ${flexout}
+                COMMAND ${FLEX_EXECUTABLE}
+                --outfile=${flexout}
+                -P${prefix}
+                ../main/calc/calc.l
+        )
+    endif ()
+endfunction()
+
+generate()
 
 add_executable(
         yaccExmpl
-        #source:
+        #main:
         main/main.cpp
+
+        #calc:
         main/calc/calc.h
-        #Generated files:
         generated/calc/calc_parser.cpp
         generated/calc/calc_token.h
         generated/calc/calc_lexer.cpp
-        generated/calc/calc_parser.cpp generated/calc/calc_parser.cpp)
+        generated/calc/calc_parser.cpp generated/calc/calc_parser.cpp
+)
