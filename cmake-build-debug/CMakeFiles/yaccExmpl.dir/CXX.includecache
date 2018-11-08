@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../main/calc/calc.h
+cctype
+-
+cstdio
+-
+stdlib.h
+-
+
+/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/main/main.cpp
+calc/calc.h
+-
+
