@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "../generated/calc/calc_parser.cpp"
   "../generated/calc/calc_lexer.cpp"
-  "CMakeFiles/yaccExmpl.dir/main/main.cpp.o"
+  "CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.o"
   "CMakeFiles/yaccExmpl.dir/generated/calc/calc_parser.cpp.o"
   "CMakeFiles/yaccExmpl.dir/generated/calc/calc_lexer.cpp.o"
   "yaccExmpl.pdb"

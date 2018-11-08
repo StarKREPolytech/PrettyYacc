@@ -9,6 +9,6 @@ CMakeFiles/yaccExmpl.dir/generated/calc/calc_parser.cpp.o
  ../generated/calc/calc_token.h
  ../main/calc/calc.h
  /home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/generated/calc/calc_parser.cpp
-CMakeFiles/yaccExmpl.dir/main/main.cpp.o
+CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.o
  ../main/calc/calc.h
- /home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/main/main.cpp
+ /home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/main/calc/calc.cpp

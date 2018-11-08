@@ -65,18 +65,18 @@ include CMakeFiles/yaccExmpl.dir/flags.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ../generated/calc/calc_lexer.cpp"
 	/usr/bin/flex --outfile=../generated/calc/calc_lexer.cpp -Pcalc_ ../main/calc/calc.l
 
-CMakeFiles/yaccExmpl.dir/main/main.cpp.o: CMakeFiles/yaccExmpl.dir/flags.make
-CMakeFiles/yaccExmpl.dir/main/main.cpp.o: ../main/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/yaccExmpl.dir/main/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaccExmpl.dir/main/main.cpp.o -c /home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/main/main.cpp
+CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.o: CMakeFiles/yaccExmpl.dir/flags.make
+CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.o: ../main/calc/calc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.o -c /home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/main/calc/calc.cpp
 
-CMakeFiles/yaccExmpl.dir/main/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaccExmpl.dir/main/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/main/main.cpp > CMakeFiles/yaccExmpl.dir/main/main.cpp.i
+CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/main/calc/calc.cpp > CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.i
 
-CMakeFiles/yaccExmpl.dir/main/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaccExmpl.dir/main/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/main/main.cpp -o CMakeFiles/yaccExmpl.dir/main/main.cpp.s
+CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/main/calc/calc.cpp -o CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.s
 
 CMakeFiles/yaccExmpl.dir/generated/calc/calc_parser.cpp.o: CMakeFiles/yaccExmpl.dir/flags.make
 CMakeFiles/yaccExmpl.dir/generated/calc/calc_parser.cpp.o: ../generated/calc/calc_parser.cpp
@@ -106,14 +106,14 @@ CMakeFiles/yaccExmpl.dir/generated/calc/calc_lexer.cpp.s: cmake_force
 
 # Object files for target yaccExmpl
 yaccExmpl_OBJECTS = \
-"CMakeFiles/yaccExmpl.dir/main/main.cpp.o" \
+"CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.o" \
 "CMakeFiles/yaccExmpl.dir/generated/calc/calc_parser.cpp.o" \
 "CMakeFiles/yaccExmpl.dir/generated/calc/calc_lexer.cpp.o"
 
 # External object files for target yaccExmpl
 yaccExmpl_EXTERNAL_OBJECTS =
 
-yaccExmpl: CMakeFiles/yaccExmpl.dir/main/main.cpp.o
+yaccExmpl: CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.o
 yaccExmpl: CMakeFiles/yaccExmpl.dir/generated/calc/calc_parser.cpp.o
 yaccExmpl: CMakeFiles/yaccExmpl.dir/generated/calc/calc_lexer.cpp.o
 yaccExmpl: CMakeFiles/yaccExmpl.dir/build.make

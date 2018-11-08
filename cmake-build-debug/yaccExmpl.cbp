@@ -103,10 +103,10 @@
 		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/generated/calc/calc_token.h">
 			<Option target="yaccExmpl"/>
 		</Unit>
-		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/main/calc/calc.h">
+		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/main/calc/calc.cpp">
 			<Option target="yaccExmpl"/>
 		</Unit>
-		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/main/main.cpp">
+		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/main/calc/calc.h">
 			<Option target="yaccExmpl"/>
 		</Unit>
 		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/CMakeLists.txt">

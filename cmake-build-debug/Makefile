@@ -177,32 +177,32 @@ generated/calc/calc_parser.cpp.s:
 	$(MAKE) -f CMakeFiles/yaccExmpl.dir/build.make CMakeFiles/yaccExmpl.dir/generated/calc/calc_parser.cpp.s
 .PHONY : generated/calc/calc_parser.cpp.s
 
-main/main.o: main/main.cpp.o
+main/calc/calc.o: main/calc/calc.cpp.o
 
-.PHONY : main/main.o
+.PHONY : main/calc/calc.o
 
 # target to build an object file
-main/main.cpp.o:
-	$(MAKE) -f CMakeFiles/yaccExmpl.dir/build.make CMakeFiles/yaccExmpl.dir/main/main.cpp.o
-.PHONY : main/main.cpp.o
+main/calc/calc.cpp.o:
+	$(MAKE) -f CMakeFiles/yaccExmpl.dir/build.make CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.o
+.PHONY : main/calc/calc.cpp.o
 
-main/main.i: main/main.cpp.i
+main/calc/calc.i: main/calc/calc.cpp.i
 
-.PHONY : main/main.i
+.PHONY : main/calc/calc.i
 
 # target to preprocess a source file
-main/main.cpp.i:
-	$(MAKE) -f CMakeFiles/yaccExmpl.dir/build.make CMakeFiles/yaccExmpl.dir/main/main.cpp.i
-.PHONY : main/main.cpp.i
+main/calc/calc.cpp.i:
+	$(MAKE) -f CMakeFiles/yaccExmpl.dir/build.make CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.i
+.PHONY : main/calc/calc.cpp.i
 
-main/main.s: main/main.cpp.s
+main/calc/calc.s: main/calc/calc.cpp.s
 
-.PHONY : main/main.s
+.PHONY : main/calc/calc.s
 
 # target to generate assembly for a file
-main/main.cpp.s:
-	$(MAKE) -f CMakeFiles/yaccExmpl.dir/build.make CMakeFiles/yaccExmpl.dir/main/main.cpp.s
-.PHONY : main/main.cpp.s
+main/calc/calc.cpp.s:
+	$(MAKE) -f CMakeFiles/yaccExmpl.dir/build.make CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.s
+.PHONY : main/calc/calc.cpp.s
 
 # Help Target
 help:
@@ -219,9 +219,9 @@ help:
 	@echo "... generated/calc/calc_parser.o"
 	@echo "... generated/calc/calc_parser.i"
 	@echo "... generated/calc/calc_parser.s"
-	@echo "... main/main.o"
-	@echo "... main/main.i"
-	@echo "... main/main.s"
+	@echo "... main/calc/calc.o"
+	@echo "... main/calc/calc.i"
+	@echo "... main/calc/calc.s"
 .PHONY : help
 
 

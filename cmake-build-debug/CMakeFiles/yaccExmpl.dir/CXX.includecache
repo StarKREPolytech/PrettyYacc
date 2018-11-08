@@ -54,3 +54,7 @@ stdlib.h
 stdio.h
 -
 
+/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/main/calc/calc.cpp
+calc/calc.h
+-
+

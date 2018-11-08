@@ -6,49 +6,51 @@ set(CMAKE_CXX_STANDARD 17)
 
 include_directories(main generated)
 
-set(prefix calc_)
-
 #Find yacc:
 find_package(BISON REQUIRED)
 
 #Find lex:
 find_package(FLEX REQUIRED)
 
-function(generate)
+function(generate path name)
+    set(prefix ${name}_)
     if (BISON_FOUND)
-        set(yaccout ../generated/calc/calc_parser.cpp)
+        set(yaccout ../generated/${name}/${name}_parser.cpp)
         add_custom_command(
                 OUTPUT ${yaccout}
                 COMMAND ${BISON_EXECUTABLE}
-                --defines=../generated/calc/calc_token.h
+                --defines=../generated/${name}/${name}_token.h
                 --output=${yaccout}
                 -p ${prefix}
-                ../main/calc/calc.y
+                ../${path}/${name}/${name}.y
         )
+    else ()
+        message(ERROR "Cannot find YACC!")
     endif ()
     if (FLEX_FOUND)
-        set(flexout ../generated/calc/calc_lexer.cpp)
+        set(flexout ../generated/${name}/${name}_lexer.cpp)
         add_custom_command(
                 OUTPUT ${flexout}
                 COMMAND ${FLEX_EXECUTABLE}
                 --outfile=${flexout}
                 -P${prefix}
-                ../main/calc/calc.l
+                ../${path}/${name}/${name}.l
         )
+    else ()
+        message(ERROR "Cannot find LEX")
     endif ()
 endfunction()
 
-generate()
+generate(main calc)
 
 add_executable(
         yaccExmpl
         #main:
-        main/main.cpp
+        main/calc/calc.cpp
 
         #calc:
         main/calc/calc.h
         generated/calc/calc_parser.cpp
         generated/calc/calc_token.h
         generated/calc/calc_lexer.cpp
-        generated/calc/calc_parser.cpp generated/calc/calc_parser.cpp
 )

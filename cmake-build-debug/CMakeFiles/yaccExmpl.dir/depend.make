@@ -9,6 +9,6 @@ CMakeFiles/yaccExmpl.dir/generated/calc/calc_parser.cpp.o: ../generated/calc/cal
 CMakeFiles/yaccExmpl.dir/generated/calc/calc_parser.cpp.o: ../main/calc/calc.h
 CMakeFiles/yaccExmpl.dir/generated/calc/calc_parser.cpp.o: ../generated/calc/calc_parser.cpp
 
-CMakeFiles/yaccExmpl.dir/main/main.cpp.o: ../main/calc/calc.h
-CMakeFiles/yaccExmpl.dir/main/main.cpp.o: ../main/main.cpp
+CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.o: ../main/calc/calc.h
+CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.o: ../main/calc/calc.cpp
 

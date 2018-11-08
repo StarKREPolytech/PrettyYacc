@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/generated/calc/calc_lexer.cpp" "/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/cmake-build-debug/CMakeFiles/yaccExmpl.dir/generated/calc/calc_lexer.cpp.o"
   "/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/generated/calc/calc_parser.cpp" "/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/cmake-build-debug/CMakeFiles/yaccExmpl.dir/generated/calc/calc_parser.cpp.o"
-  "/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/main/main.cpp" "/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/cmake-build-debug/CMakeFiles/yaccExmpl.dir/main/main.cpp.o"
+  "/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/main/calc/calc.cpp" "/home/ihb/IgorProjects/education/translatingSystems/yaccExmpl/cmake-build-debug/CMakeFiles/yaccExmpl.dir/main/calc/calc.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
